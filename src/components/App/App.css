@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  font-family: "Kanit", sans-serif;
+  font-size: 10px;
+  height: 100vh;
+  background: rgb(200, 127, 255);
+  background: linear-gradient(
+    86deg,
+    rgba(200, 127, 255, 1) 0%,
+    rgba(124, 68, 237, 1) 49%,
+    rgba(102, 0, 255, 1) 100%,
+    rgba(56, 250, 5, 1) 100%
+  );
+}
