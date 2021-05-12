@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d77d57a4.chunk.css",
+    "main.js": "/static/js/main.63fa062a.chunk.js",
+    "main.js.map": "/static/js/main.63fa062a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d35d8aac.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d35d8aac.js.map",
+    "static/js/2.ae2ed2d5.chunk.js": "/static/js/2.ae2ed2d5.chunk.js",
+    "static/js/2.ae2ed2d5.chunk.js.map": "/static/js/2.ae2ed2d5.chunk.js.map",
+    "static/js/3.f85f43af.chunk.js": "/static/js/3.f85f43af.chunk.js",
+    "static/js/3.f85f43af.chunk.js.map": "/static/js/3.f85f43af.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d77d57a4.chunk.css.map": "/static/css/main.d77d57a4.chunk.css.map",
+    "static/js/2.ae2ed2d5.chunk.js.LICENSE.txt": "/static/js/2.ae2ed2d5.chunk.js.LICENSE.txt",
+    "static/media/Contact.css": "/static/media/Aguada.6fd59a64.jpg",
+    "static/media/office.cd1e97a5.jpg": "/static/media/office.cd1e97a5.jpg",
+    "static/media/worker.d7d3455a.jpg": "/static/media/worker.d7d3455a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d35d8aac.js",
+    "static/js/2.ae2ed2d5.chunk.js",
+    "static/css/main.d77d57a4.chunk.css",
+    "static/js/main.63fa062a.chunk.js"
+  ]
+}
