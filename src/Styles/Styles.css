@@ -167,7 +167,7 @@
   margin-top: 4rem;
 }
 
-.input {
+.container-input .input {
   border-radius: 0.2rem;
   border: none;
   width: 20%;
@@ -176,7 +176,7 @@
   text-align: center;
 }
 
-.button-submit {
+.container-input .button-submit {
   border: 1px solid whitesmoke;
   padding: 0.2rem;
   border-radius: 0.2rem;
@@ -184,13 +184,13 @@
   transition: 1s;
 }
 
-.button-submit:hover {
+.container-input .button-submit:hover {
   background-color: #1cdd1c;
   color: whitesmoke;
   transform: translateY(-2px);
 }
 
-.button-submit:active {
+.container-input .button-submit:active {
   transform: translateY(2px);
 }
 
@@ -205,67 +205,46 @@
   gap: 0.5rem;
 }
 
-#list-completed {
-  list-style: none;
-  background-color: rgba(74, 247, 74, 0.616);
-  color: whitesmoke;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  flex-basis: 20%;
-  text-align: center;
-}
-
-#list-pending {
-  list-style: none;
-  font-size: 1rem;
-  flex-basis: 20%;
-  text-align: center;
-}
-
-.new-item {
-  width: 70%;
-  padding: 0.5rem 0;
+.container-todos .new-item {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 0.3rem 0;
+  width: 60%;
   background-color: whitesmoke;
   border-radius: 0.5rem;
 }
 
-.new-item li {
-  color: purple;
-}
-
-.buttons {
+.container-todos .new-item .buttons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-basis: 4rem;
 }
 
-#buttom-complete {
+.container-todos .new-item .buttons #buttom-complete {
   border-radius: 0.2rem;
   border: none;
   width: 20px;
-  color: #0bfa0b;
+  color: #005700;
   padding: 0.2rem;
   transition: 1s;
 }
 
-#buttom-complete:hover {
+.container-todos .new-item .buttons #buttom-complete:hover {
   background-color: #0cd30c;
   color: whitesmoke;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
-#buttom-complete:active {
+.container-todos .new-item .buttons #buttom-complete:active {
   background-color: whitesmoke;
   color: #0cd30c;
   transform: translateY(1px);
   transition: 0.1s;
 }
 
-#buttom-delete {
+.container-todos .new-item .buttons #buttom-delete {
   border-radius: 0.2rem;
   border: none;
   width: 20px;
@@ -274,22 +253,46 @@
   transition: 1s;
 }
 
-#buttom-delete:hover {
+.container-todos .new-item .buttons #buttom-delete:hover {
   background-color: #d30c1d;
   color: whitesmoke;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
-#buttom-delete:active {
+.container-todos .new-item .buttons #buttom-delete:active {
   background-color: whitesmoke;
   color: #d30c1d;
   transform: translateY(1px);
   transition: 0.1s;
 }
 
+.container-todos .new-item li {
+  color: purple;
+}
+
+.container-todos #list-completed {
+  list-style: none;
+  background-color: rgba(198, 74, 247, 0.616);
+  color: whitesmoke;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  flex-basis: 20%;
+  text-align: center;
+}
+
+.container-todos #list-pending {
+  list-style: none;
+  font-size: 1rem;
+  flex-basis: 20%;
+  text-align: center;
+}
+
 @media only screen and (max-width: 480px) {
   .list-pending {
     font-size: 0.7rem;
+  }
+  .container-todos .new-item {
+    width: 90%;
   }
   .list-completed {
     font-size: 0.7rem;
