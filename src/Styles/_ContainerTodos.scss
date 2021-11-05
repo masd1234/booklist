@@ -1,0 +1,150 @@
+.container-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1rem;
+  color: whitesmoke;
+  margin-top: 4rem;
+}
+
+.input {
+  border-radius: 0.2rem;
+  border: none;
+  width: 20%;
+  background-color: rgba(245, 245, 245, 0.315);
+  color: whitesmoke;
+  text-align: center;
+}
+
+.button-submit {
+  border: 1px solid whitesmoke;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  color: rgb(6, 155, 6);
+  transition: 1s;
+}
+
+.button-submit:hover {
+  background-color: rgb(28, 221, 28);
+  color: whitesmoke;
+  transform: translateY(-2px);
+}
+
+.button-submit:active {
+  transform: translateY(2px);
+}
+
+.container-todos {
+  height: auto;
+  margin-top: 2rem;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#list-completed {
+  list-style: none;
+  background-color: rgba(74, 247, 74, 0.616);
+  color: whitesmoke;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  flex-basis: 20%;
+  text-align: center;
+}
+
+#list-pending {
+  list-style: none;
+  font-size: 1rem;
+  flex-basis: 20%;
+  text-align: center;
+}
+
+.new-item {
+  width: 70%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+}
+
+.new-item li {
+  color: purple;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 4rem;
+}
+
+#buttom-complete {
+  border-radius: 0.2rem;
+  border: none;
+  width: 20px;
+  color: rgb(11, 250, 11);
+  padding: 0.2rem;
+  transition: 1s;
+}
+
+#buttom-complete:hover {
+  background-color: rgb(12, 211, 12);
+  color: whitesmoke;
+  transform: translateY(-3px);
+}
+
+#buttom-complete:active {
+  background-color: whitesmoke;
+  color: rgb(12, 211, 12);
+  transform: translateY(1px);
+  transition: 0.1s;
+}
+
+#buttom-delete {
+  border-radius: 0.2rem;
+  border: none;
+  width: 20px;
+  color: rgb(211, 12, 29);
+  padding: 0.2rem;
+  transition: 1s;
+}
+
+#buttom-delete:hover {
+  background-color: rgb(211, 12, 29);
+  color: whitesmoke;
+  transform: translateY(-3px);
+}
+
+#buttom-delete:active {
+  background-color: whitesmoke;
+  color: rgb(211, 12, 29);
+  transform: translateY(1px);
+  transition: 0.1s;
+}
+
+@media only screen and (max-width: 480px) {
+  .list-pending {
+    font-size: 0.7rem;
+  }
+
+  .list-completed {
+    font-size: 0.7rem;
+  }
+
+  .container-input,
+  .button-submit {
+    gap: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  #buttom-complete,
+  #buttom-delete {
+    font-size: 0.7rem;
+  }
+}

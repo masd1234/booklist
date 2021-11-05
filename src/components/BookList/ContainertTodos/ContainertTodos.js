@@ -1,8 +1,7 @@
 import React from "react";
-import "./ContainertTodos.css";
-import TodoItems from "./TodoItems/TodoItems";
+import TodoItems from "../TodoItems/TodoItems";
 
-function ContainertTodos({ itemTodo, itemDelete, itemCompleted }) {
+export const ContainertTodos = ({ itemTodo, itemDelete, itemCompleted }) => {
   return (
     <div>
       <ul className="container-todos">
@@ -19,6 +18,4 @@ function ContainertTodos({ itemTodo, itemDelete, itemCompleted }) {
       </ul>
     </div>
   );
-}
-
-export default ContainertTodos;
+};

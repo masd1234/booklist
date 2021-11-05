@@ -1,0 +1,58 @@
+.home-container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.home-container h1 {
+  font-size: 3.5rem;
+}
+
+.home-container p {
+  font-size: 1.3rem;
+}
+
+.home-container h1,
+.home-container p,
+.home-container-link {
+  animation-name: slideUp;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.home-container-link:link {
+  margin-top: 1rem;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: 1s;
+  border: 1px solid whitesmoke;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.home-container-link:visited {
+  color: whitesmoke;
+}
+
+.home-container-link:hover {
+  color: rgb(79, 204, 20);
+  background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 480px) {
+  .home-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-container p,
+  .home-container-link:link {
+    font-size: 1rem;
+  }
+}

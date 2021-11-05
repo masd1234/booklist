@@ -1,13 +1,11 @@
-import "./Input.css";
-
-function Input({
+export const Input = ({
   setinputValue,
   inputValue,
   setinputValue1,
   inputValue1,
   itemTodo,
   setItemTodo,
-}) {
+}) => {
   const readerInput = (e) => {
     setinputValue(e.target.value);
   };
@@ -18,7 +16,7 @@ function Input({
 
   const addItem = (e) => {
     if (inputValue === "" || inputValue1 === "") {
-      alert("please fill de inputs");
+      alert("please type a book");
       e.stopPropagation();
     } else {
       let id = Math.floor(Math.random() * 5000);
@@ -78,6 +76,4 @@ function Input({
       </button>
     </div>
   );
-}
-
-export default Input;
+};
