@@ -29,6 +29,7 @@ export const Input = ({
           author: inputValue1,
           title: inputValue,
           completed: false,
+          editing: false,
         },
       ]);
     }
@@ -42,6 +43,25 @@ export const Input = ({
 
   return (
     <div className="container-input">
+      <div className="container-counter">
+        <h4>Total Books: {itemTodo.length}</h4>
+        <h4>
+          Completed Books:
+          {
+            itemTodo.filter((el) => {
+              return el.completed === true;
+            }).length
+          }
+        </h4>
+        <h4>
+          Pending Books:{" "}
+          {
+            itemTodo.filter((el) => {
+              return el.completed !== true;
+            }).length
+          }
+        </h4>
+      </div>
       <label htmlFor="title" className="label">
         Title
       </label>
@@ -53,6 +73,7 @@ export const Input = ({
         value={inputValue}
         onChange={readerInput}
         onKeyDown={handleKey}
+        required
       />
       <label htmlFor="author" className="label">
         Author
@@ -65,6 +86,7 @@ export const Input = ({
         value={inputValue1}
         onChange={readerInput1}
         onKeyDown={handleKey}
+        required
       />
       <button
         type="submit"

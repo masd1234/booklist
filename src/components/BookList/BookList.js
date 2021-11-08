@@ -1,11 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Input } from "./Input/Input";
 import { ContainertTodos } from "./ContainertTodos/ContainertTodos";
 
 export const BookList = () => {
   const [inputValue, setinputValue] = useState("");
   const [inputValue1, setinputValue1] = useState("");
-  const [itemTodo, setItemTodo] = useState([]);
+
+  const getSessionStorageOrDefault = (key, defaultValue) => {
+    const stored = sessionStorage.getItem(key);
+    if (!stored) {
+      return defaultValue;
+    }
+    return JSON.parse(stored);
+  };
+  const [itemTodo, setItemTodo] = useState(
+    getSessionStorageOrDefault("itemTodo", [])
+  );
+
+  useEffect(() => {
+    sessionStorage.setItem("itemTodo", JSON.stringify(itemTodo));
+  }, [itemTodo]);
 
   const itemDelete = (id) => {
     const newList = itemTodo.filter((item) => item.id !== id);
@@ -19,6 +33,7 @@ export const BookList = () => {
 
     setItemTodo(newList);
   };
+
   return (
     <div>
       <Input

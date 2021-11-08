@@ -10,10 +10,21 @@ const TodoItems = ({ itemTodo, itemDelete, itemCompleted }) => {
       <li>Author: {itemTodo.title}</li>
       <li>Title: {itemTodo.author}</li>
       <li className=" buttons">
-        <button id="buttom-complete" onClick={() => itemCompleted(itemTodo.id)}>
+        <button
+          className="buttonsItems"
+          id="buttom-complete"
+          onClick={() => itemCompleted(itemTodo.id)}
+        >
           V
         </button>
-        <button id="buttom-delete" onClick={() => itemDelete(itemTodo.id)}>
+        <button className="buttonsItems" id="buttom-edit">
+          -
+        </button>
+        <button
+          className="buttonsItems"
+          id="buttom-delete"
+          onClick={() => itemDelete(itemTodo.id)}
+        >
           X
         </button>
       </li>
