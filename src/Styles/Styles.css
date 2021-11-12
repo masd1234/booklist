@@ -167,13 +167,6 @@
   color: whitesmoke;
 }
 
-.container-input .container-counter {
-  flex-grow: 0.1;
-  border: 1px solid whitesmoke;
-  border-radius: 0.3rem;
-  padding: 0.5rem;
-}
-
 .container-input .input {
   border-radius: 0.2rem;
   border: none;
@@ -199,6 +192,17 @@
 
 .container-input .button-submit:active {
   transform: translateY(2px);
+}
+
+.container-counter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-grow: 0.1;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  color: whitesmoke;
+  font-size: 1rem;
 }
 
 .container-todos {
@@ -310,12 +314,15 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 560px) {
   .list-pending {
     font-size: 0.7rem;
   }
   .container-todos .new-item {
     width: 90%;
+  }
+  .container-todos .new-item li {
+    font-size: 0.7rem;
   }
   .list-completed {
     font-size: 0.7rem;
@@ -324,6 +331,9 @@
   .button-submit {
     gap: 0.5rem;
     font-size: 0.7rem;
+  }
+  .container-counter {
+    font-size: 0.6rem;
   }
   #buttom-complete,
   #buttom-delete {

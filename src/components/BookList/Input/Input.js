@@ -42,7 +42,43 @@ export const Input = ({
   };
 
   return (
-    <div className="container-input">
+    <>
+      <div className="container-input">
+        <label htmlFor="title" className="label">
+          Title
+        </label>
+        <input
+          type="text"
+          name="title"
+          id="book-title"
+          className="input"
+          value={inputValue}
+          onChange={readerInput}
+          onKeyDown={handleKey}
+          required
+        />
+        <label htmlFor="author" className="label">
+          Author
+        </label>
+        <input
+          type="text"
+          name="author"
+          id="book-author"
+          className="input"
+          value={inputValue1}
+          onChange={readerInput1}
+          onKeyDown={handleKey}
+          required
+        />
+        <button
+          type="submit"
+          value="Add"
+          className="button-submit"
+          onClick={addItem}
+        >
+          Add Book
+        </button>
+      </div>
       <div className="container-counter">
         <h4>Total Books: {itemTodo.length}</h4>
         <h4>
@@ -62,40 +98,6 @@ export const Input = ({
           }
         </h4>
       </div>
-      <label htmlFor="title" className="label">
-        Title
-      </label>
-      <input
-        type="text"
-        name="title"
-        id="book-title"
-        className="input"
-        value={inputValue}
-        onChange={readerInput}
-        onKeyDown={handleKey}
-        required
-      />
-      <label htmlFor="author" className="label">
-        Author
-      </label>
-      <input
-        type="text"
-        name="author"
-        id="book-author"
-        className="input"
-        value={inputValue1}
-        onChange={readerInput1}
-        onKeyDown={handleKey}
-        required
-      />
-      <button
-        type="submit"
-        value="Add"
-        className="button-submit"
-        onClick={addItem}
-      >
-        Add Book
-      </button>
-    </div>
+    </>
   );
 };
