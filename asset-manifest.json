@@ -1,20 +1,15 @@
 {
   "files": {
-    "main.css": "/booklist/static/css/main.d070ca4d.chunk.css",
-    "main.js": "/booklist/static/js/main.bbe3aad2.chunk.js",
-    "main.js.map": "/booklist/static/js/main.bbe3aad2.chunk.js.map",
-    "runtime-main.js": "/booklist/static/js/runtime-main.65241ff5.js",
-    "runtime-main.js.map": "/booklist/static/js/runtime-main.65241ff5.js.map",
-    "static/js/2.61e9d2e8.chunk.js": "/booklist/static/js/2.61e9d2e8.chunk.js",
-    "static/js/2.61e9d2e8.chunk.js.map": "/booklist/static/js/2.61e9d2e8.chunk.js.map",
-    "index.html": "/booklist/index.html",
-    "static/css/main.d070ca4d.chunk.css.map": "/booklist/static/css/main.d070ca4d.chunk.css.map",
-    "static/js/2.61e9d2e8.chunk.js.LICENSE.txt": "/booklist/static/js/2.61e9d2e8.chunk.js.LICENSE.txt"
+    "main.css": "/masd1234/reactodo.git/static/css/main.b3ebdfef.css",
+    "main.js": "/masd1234/reactodo.git/static/js/main.03a41166.js",
+    "static/js/787.4b752bae.chunk.js": "/masd1234/reactodo.git/static/js/787.4b752bae.chunk.js",
+    "index.html": "/masd1234/reactodo.git/index.html",
+    "main.b3ebdfef.css.map": "/masd1234/reactodo.git/static/css/main.b3ebdfef.css.map",
+    "main.03a41166.js.map": "/masd1234/reactodo.git/static/js/main.03a41166.js.map",
+    "787.4b752bae.chunk.js.map": "/masd1234/reactodo.git/static/js/787.4b752bae.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.65241ff5.js",
-    "static/js/2.61e9d2e8.chunk.js",
-    "static/css/main.d070ca4d.chunk.css",
-    "static/js/main.bbe3aad2.chunk.js"
+    "static/css/main.b3ebdfef.css",
+    "static/js/main.03a41166.js"
   ]
 }
